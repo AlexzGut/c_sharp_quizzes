@@ -1,0 +1,40 @@
+<main>
+    <form action="/checkAnswer" method="POST">
+        <div id="question">
+            <p>
+                <%= question.question %>
+            </p>
+        </div>
+        <div id="options">
+            <% question.options.forEach((option, index)=> { %>
+                <div id="option">
+                    <input type="radio" name="answer" id="<%= index %>" value="<%= option %>" required>
+                    <label for="<%= index %>" class="optionLabel">
+                        <%= option %>
+                    </label>
+                </div>
+                <%})%>
+        </div>
+        <div id="submit">
+            <input type="submit" id="submitBtn" value="Submit">
+        </div>
+    </form>
+
+    <script>
+        const labels = document.getElementsByClassName("optionLabel");
+
+        const changeBackgroundColor = function () {
+            for (let index = 0; index < labels.length; index++) {
+                labels[index].style.backgroundColor = "#fff";
+            }
+
+            this.style.backgroundColor = "#DEDBFA";
+        }
+
+        for (let index = 0; index < labels.length; index++) {
+            labels[index].addEventListener("click", changeBackgroundColor)
+        }
+
+
+    </script>
+</main>

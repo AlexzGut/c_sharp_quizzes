@@ -1,0 +1,17 @@
+{
+  "name": "c_sharp_quizes",
+  "version": "1.0.0",
+  "description": "An app to practice QAs for C# midtest",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --watch main.js"
+  },
+  "author": "Alexander Gutierrez",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-ejs-layouts": "^2.5.1"
+  }
+}

@@ -1,0 +1,18 @@
+#grade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+}
+
+#grade h1, p{
+    text-align: center;
+}
+
+#anotherQuizLink {
+    padding: .5em;
+    background-color: #49477D;
+    color: white;
+    font-weight: 500;
+    border-radius: .5em;
+}
